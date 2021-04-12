@@ -1,7 +1,7 @@
-node 3756787f861c.mylabserver.com {
+node default {
   file { '/root/README':
-    ensure  => file,
-    content => 'This are a README',
-    onwer   => 'root',
-    }
- }
+    ensure => file,
+    content => 'This is a readme',
+    owner   => 'root',
+  }
+}
