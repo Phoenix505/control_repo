@@ -1,8 +1,7 @@
 
 node default {
-  file { '/root/README':
-    ensure  => file,
-    content => 'This is a readme v2 test',
-    owner   => 'root',
-  }
 }
+node '3756787f861c.mylabserver.com' {
+  include role::master_server
+}
+  
